@@ -18,6 +18,7 @@ export default defineConfig({
         items: [
           { text: "Видение", link: "/product/vision" },
           { text: "Принципы", link: "/product/principles" },
+          { text: "Базовый проект приложения", link: "/product/application-blueprint" },
           { text: "MVP", link: "/product/mvp" },
           { text: "Roadmap", link: "/product/roadmap" }
         ]
