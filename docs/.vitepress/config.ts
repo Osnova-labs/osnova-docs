@@ -17,6 +17,7 @@ export default defineConfig({
         text: "Продукт",
         items: [
           { text: "Видение", link: "/product/vision" },
+          { text: "Osnova Reborn", link: "/product/osnova-reborn" },
           { text: "Принципы", link: "/product/principles" },
           { text: "Базовый проект приложения", link: "/product/application-blueprint" },
           { text: "MVP", link: "/product/mvp" },
