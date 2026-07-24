@@ -1,29 +1,54 @@
-# Roadmap
+# Roadmap Osnova Reborn
 
-## Основа
+## 1. Нормативная основа
 
-- Публичный формат проекта в `osnova-spec`.
-- Общие TypeScript-пакеты в `osnova-core`.
-- Windows-first desktop shell в `osnova-desktop`.
-- Минимальный plugin SDK в `osnova-plugin-sdk`.
+- Принять продуктовую модель Reborn.
+- Зафиксировать формат проекта 0.2 и миграцию 0.1 -> 0.2.
+- Принять ADR для артефактов, расширений, runtime, контекста и агента.
 
-## Рабочая среда
+## 2. Доменное ядро
 
-- Список конспектов и редактирование Markdown.
-- Просмотр файлов проекта.
-- Настройки проекта.
-- Диагностика валидации папки проекта.
+- Артефакты, payloads, provenance и relations.
+- Переносимые сессии и append-only события.
+- Атомарная публикация результатов.
+- Reconciliation обычных файлов и дескрипторов.
 
-## Расширения
+## 3. Runtime control plane
 
-- Модель загрузки плагинов.
-- Реестр команд.
-- Проверка permissions в desktop-клиенте.
-- Публичный каталог плагинов.
+- Локальный versioned RPC.
+- Job Manager, cancellation и crash recovery.
+- Operation Registry и risk policy.
+- Headless CLI для полного backend-сценария.
 
-## AI Runtime
+## 4. Экосистема расширений
 
-- Граница локального runtime-процесса.
-- Абстракция model provider.
-- Project-aware workflows для конспектов и карточек.
-- Индексация под контролем пользователя.
+- Extension Manifest v1 и Developer Kit.
+- Подписанный каталог, установка, update и rollback.
+- Process, OCI, remote и MCP adapters.
+- Reference Tool и Advanced Tool.
+
+## 5. Контекст и модели
+
+- Compact/expanded context providers.
+- Project-scoped индекс и connectors.
+- Local и cloud model providers.
+- Проверяемые model dependencies.
+
+## 6. Агентная оркестрация
+
+- Видимый plan schema.
+- Bounded execution и approvals по риску.
+- Provenance и audit trail без сохранения hidden reasoning.
+
+## 7. Desktop integration
+
+- Typed bridge к runtime без нового renderer.
+- Sandboxed Electron renderer.
+- API для будущих экранов проекта, сессий, контекста и Tool Manager.
+
+## После backend foundation
+
+- Цельный новый frontend Reborn.
+- Подписанный публичный каталог и процессы модерации.
+- Явно подключаемый контекст workspace или всего компьютера.
+- Фоновая обработка и синхронизация как отдельные opt-in возможности.

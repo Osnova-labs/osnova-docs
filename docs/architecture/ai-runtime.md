@@ -1,7 +1,18 @@
-# AI Runtime
+# Osnova Runtime
 
-AI-поддержка является опциональной и отделена от основной модели проекта.
+`osnova-runtime` является локальным control plane для project services,
+расширений, jobs, контекста и моделей. Сам процесс runtime является частью
+backend, а AI-поддержка внутри него остается опциональной.
 
-`osnova-ai-runtime` отвечает за интеграцию локальных моделей, границы индексации и AI-операции, которые не должны встраиваться напрямую в desktop UI layer.
+Runtime отвечает за:
 
-Desktop-клиент должен взаимодействовать с runtime через узкий локальный API. Файлы проекта остаются долговечным состоянием. Индексы runtime и сгенерированные кеши являются производными данными, если пользователь явно не сохранил их в проект.
+- Operation Registry и Job Manager;
+- Runtime Supervisor;
+- Artifact Ingestor и Session Store;
+- Context Broker и project-scoped index;
+- model providers и model dependencies;
+- bounded agent orchestration.
+
+Desktop взаимодействует с runtime через versioned local RPC. Файлы проекта,
+artifact descriptors и sessions остаются долговечным состоянием. Индексы,
+очереди восстановления и кеши являются производными данными.

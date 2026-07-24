@@ -19,6 +19,8 @@ export default defineConfig({
           { text: "Видение", link: "/product/vision" },
           { text: "Osnova Reborn", link: "/product/osnova-reborn" },
           { text: "Принципы", link: "/product/principles" },
+          { text: "Аудитория и JTBD", link: "/product/jobs-and-non-goals" },
+          { text: "UX-доктрина", link: "/product/ux-doctrine" },
           { text: "Базовый проект приложения", link: "/product/application-blueprint" },
           { text: "MVP", link: "/product/mvp" },
           { text: "Roadmap", link: "/product/roadmap" }
@@ -32,7 +34,19 @@ export default defineConfig({
           { text: "Desktop", link: "/architecture/desktop" },
           { text: "Local First", link: "/architecture/local-first" },
           { text: "Система плагинов", link: "/architecture/plugin-system" },
-          { text: "AI Runtime", link: "/architecture/ai-runtime" }
+          { text: "Osnova Runtime", link: "/architecture/ai-runtime" },
+          { text: "Runtime и безопасность", link: "/architecture/runtime-and-security" },
+          { text: "Артефакты, контекст и агент", link: "/architecture/artifacts-context-and-agent" },
+          { text: "Версии и миграции", link: "/architecture/versioning-and-migrations" }
+        ]
+      },
+      {
+        text: "Политики и безопасность",
+        items: [
+          { text: "Local-first, AI и приватность", link: "/policies/local-first-ai-and-privacy" },
+          { text: "Расширения и доверие", link: "/policies/extensions-and-trust" },
+          { text: "Threat model", link: "/security/threat-model" },
+          { text: "Разработка расширений", link: "/contributing/extensions" }
         ]
       },
       {
@@ -45,7 +59,13 @@ export default defineConfig({
           { text: "0001 Windows First", link: "/adr/adr-0001-windows-first" },
           { text: "0002 Electron React TypeScript", link: "/adr/adr-0002-electron-react-typescript" },
           { text: "0003 Folder Based Projects", link: "/adr/adr-0003-folder-based-projects" },
-          { text: "0004 Plugin System", link: "/adr/adr-0004-plugin-system" }
+          { text: "0004 Plugin System", link: "/adr/adr-0004-plugin-system" },
+          { text: "0005 Osnova Reborn", link: "/adr/adr-0005-osnova-reborn" },
+          { text: "0006 Artifacts and Sessions", link: "/adr/adr-0006-artifacts-and-sessions" },
+          { text: "0007 Extension Contributions", link: "/adr/adr-0007-extension-contributions" },
+          { text: "0008 Runtime Supervisor", link: "/adr/adr-0008-runtime-supervisor" },
+          { text: "0009 Context Policy", link: "/adr/adr-0009-context-policy" },
+          { text: "0010 Agent Risk Policy", link: "/adr/adr-0010-agent-risk-policy" }
         ]
       }
     ],

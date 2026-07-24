@@ -2,7 +2,7 @@
 
 ## Статус
 
-Принято.
+Заменено ADR 0007 «Extension Contributions».
 
 ## Контекст
 
@@ -10,7 +10,7 @@ Osnova должна поддерживать расширения без пер�
 
 ## Решение
 
-Плагины будут TypeScript или JavaScript-пакетами с manifests, permissions и регистрацией команд через host API.
+Историческое решение ограничивало плагины TypeScript/JavaScript-командами. Reborn заменяет его общим Extension Manifest v1, Operations и Runtime Supervisor.
 
 ## Последствия
 

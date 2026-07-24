@@ -18,11 +18,11 @@ Windows-first Electron-приложение с React renderer и TypeScript-се
 
 ## osnova-plugin-sdk
 
-SDK для авторов плагинов. Определяет plugin manifests, permissions и черновик command API.
+Developer Kit для Extension Manifest v1, Operations, artifact/context contributions, упаковки и testkit.
 
-## osnova-ai-runtime
+## osnova-runtime
 
-Опциональный локальный runtime для AI-функций. Лицензируется отдельно от desktop-клиента.
+Обязательный локальный control plane. AI и OCI внутри него остаются опциональными возможностями.
 
 ## osnova-plugins
 

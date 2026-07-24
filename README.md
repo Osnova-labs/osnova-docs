@@ -4,7 +4,8 @@
 
 ## Статус
 
-Стартовая основа документации.
+Нормативная документация Osnova Reborn: продуктовая доктрина, открытые контракты,
+архитектура backend-платформы, политики доверия и ADR.
 
 ## Лицензия
 
@@ -23,10 +24,10 @@ pnpm preview
 
 - `osnova-spec` описывает открытый folder-based формат проекта.
 - `osnova-core` реализует общие TypeScript-примитивы проекта.
-- `osnova-desktop` содержит Windows-first Electron-клиент.
-- `osnova-plugin-sdk` задает поверхность разработки плагинов.
-- `osnova-ai-runtime` отвечает за опциональный локальный AI runtime.
-- `osnova-plugins` содержит каталог плагинов.
+- `osnova-desktop` содержит desktop-клиент для Windows и macOS.
+- `osnova-plugin-sdk` задаёт Developer Kit и контракт расширений.
+- `osnova-runtime` является обязательным локальным control plane; AI внутри него опционален.
+- `osnova-plugins` содержит каталог и эталонные расширения.
 
 ## Правила участия
 
